@@ -10,9 +10,7 @@ Prevedere per compagnie e prodotti altri campi che si ritengono necessari
 # Plus
 Se si riesce inoltre a fare in modo che tali chiamate siano autenticate viene considerato un plus. 
 
----
-
-### Note sulla realizzazione: 
+# Note sulla realizzazione: 
 L'applicazione demo è stata realizzata utilizzando .Net 6 + EntityframeworkCore 6 per la gestione della banca dati __Sqlite__ (contenuta nel progetto .\Data\localdb.sqlite). Le interrogazioni fanno uso di un _datacontext_, generico, che poi viene derivato e inniettato sui singoli servizi. Non è stato fatto uso di ADO.Net, per l'interrogazione della banca dati. La validazione è effettuata tramite libreria __FluentValidation__. All'interno del codice sono presenti diversi TODO, per ipotetiche ulteriori implentazioni o affinamento dei controlli. La persistenza delle foto prodotto non è stata implementata, anche se l'idea di base era quella di salvare, per ogni chiave prodotto il nome guid, del file memorizzato su disco, per un'ipotetica memorizzazione di un server CDN.
 
 L'applicazione demo in modalità sviluppo, abilita in automatico l'interfaccia di __swagger__. 
